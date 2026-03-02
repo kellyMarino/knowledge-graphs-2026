@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "my": "https://kellymarino.github.io/knowledge-graphs-2026/vocabulary.ttl#",
+        "ex": "https://kellymarino.github.io/knowledge-graphs-2026/data.ttl#"
+    },
+    "@graph": [
+        {
+            "@id": "ex:MyName",
+            "@type": "my:Person",
+            "my:name": "Kelly Marino",
+            "my:mbox": "thisisnotmyemail@example.org",
+            "my:studyProgram": "Microcredential student",
+            "my:studyLocation": {"@id": "https://www.ugent.be/"},
+            "my:hasPet": {"@id": "ex:Dog"},
+            "my:speaks": "Dutch",
+            "my:knows": [
+                {"@id": "https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis"},
+                {"@id": "https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna"}
+            ]
+        },
+        {
+            "@id": "ex:Dog",
+            "@type": "my:Pet"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix my:   <https://kellymarino.github.io/knowledge-graphs-2026/vocabulary.ttl#> .
+
+# ---- Classes ----
+my:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person (e.g. a student or colleague)." .
+
+my:Pet a rdfs:Class ;
+    rdfs:label "Pet" ;
+    rdfs:comment "An animal kept as a pet (e.g. a dog)." .
+
+# ---- Properties ----
+my:name a rdf:Property ;
+    rdfs:label "name" ;
+    rdfs:comment "Full name of the person." ;
+    rdfs:domain my:Person ;
+    rdfs:range rdfs:Literal .
+
+my:mbox a rdf:Property ;
+    rdfs:label "email" ;
+    rdfs:comment "Email address (mailbox)." ;
+    rdfs:domain my:Person ;
+    rdfs:range rdfs:Literal .
+
+my:knows a rdf:Property ;
+    rdfs:label "knows" ;
+    rdfs:comment "A person known by this person (e.g. friend or colleague)." ;
+    rdfs:domain my:Person ;
+    rdfs:range my:Person .
+
+my:studyProgram a rdf:Property ;
+    rdfs:label "study program" ;
+    rdfs:comment "The study program or enrollment type (e.g. Microcredential student)." ;
+    rdfs:domain my:Person ;
+    rdfs:range rdfs:Literal .
+
+my:hasPet a rdf:Property ;
+    rdfs:label "has pet" ;
+    rdfs:comment "A pet owned or cared for by this person." ;
+    rdfs:domain my:Person ;
+    rdfs:range my:Pet .
+
+my:studyLocation a rdf:Property ;
+    rdfs:label "study location" ;
+    rdfs:comment "Where the person studies (e.g. university as URI)." ;
+    rdfs:domain my:Person ;
+    rdfs:range rdfs:Resource .
+
+my:speaks a rdf:Property ;
+    rdfs:label "speaks" ;
+    rdfs:comment "A language spoken by this person." ;
+    rdfs:domain my:Person ;
+    rdfs:range rdfs:Literal .

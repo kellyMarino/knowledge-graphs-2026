@@ -1,0 +1,17 @@
+{
+  "name": "lab-1 RDF Data Modeling and Processing",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@rdfjs/parser-n3": "^2.1.0",
+    "@rdfjs/parser-jsonld": "^2.0.0",
+    "rdf-stores": "^2.1.1"
+  }
+}

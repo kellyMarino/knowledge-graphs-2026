@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Bun
+bun.lockb
+
+# OS
+.DS_Store
+Thumbs.db

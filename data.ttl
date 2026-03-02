@@ -1,0 +1,14 @@
+@prefix my: <https://kellymarino.github.io/knowledge-graphs-2026/vocabulary.ttl#> .
+@prefix ex: <https://kellymarino.github.io/knowledge-graphs-2026/data.ttl#> .
+
+ex:MyName a my:Person ;
+    my:name "Kelly Marino" ;
+    my:mbox "thisisnotmyemail@example.org" ;
+    my:studyProgram "Microcredential student" ;
+    my:studyLocation <https://www.ugent.be/> ;
+    my:hasPet ex:Dog ;
+    my:speaks "Dutch" ;
+    my:knows <https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis>, <https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna> .
+
+ex:Dog a my:Pet .
+
