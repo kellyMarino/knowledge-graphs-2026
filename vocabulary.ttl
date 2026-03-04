@@ -53,3 +53,15 @@ my:speaks a rdf:Property ;
     rdfs:comment "A language spoken by this person." ;
     rdfs:domain my:Person ;
     rdfs:range rdfs:Literal .
+
+my:depiction a rdf:Property ;
+    rdfs:label "depiction" ;
+    rdfs:comment "An image or picture of the resource." ;
+    rdfs:domain my:Pet ;
+    rdfs:range rdfs:Resource .
+
+my:breed a rdf:Property ;
+    rdfs:label "breed" ;
+    rdfs:comment "The breed of the pet (e.g. species or breed name)." ;
+    rdfs:domain my:Pet ;
+    rdfs:range rdfs:Literal .

@@ -10,5 +10,7 @@ ex:MyName a my:Person ;
     my:speaks "Dutch" ;
     my:knows <https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis>, <https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna> .
 
-ex:Dog a my:Pet .
+ex:Dog a my:Pet ;
+    my:breed "Colombian black street dog" ;
+    my:depiction <https://kellymarino.github.io/knowledge-graphs-2026/images/mybeautifuldog.jpeg> .
 

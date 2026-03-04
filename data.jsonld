@@ -20,7 +20,9 @@
         },
         {
             "@id": "ex:Dog",
-            "@type": "my:Pet"
+            "@type": "my:Pet",
+            "my:breed": "Colombian black street dog",
+            "my:depiction": { "@id": "https://kellymarino.github.io/knowledge-graphs-2026/images/mybeautifuldog.jpeg" }
         }
     ]
 }
