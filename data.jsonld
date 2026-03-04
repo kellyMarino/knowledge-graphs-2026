@@ -7,7 +7,7 @@
         {
             "@id": "ex:MyName",
             "@type": "my:Person",
-            "my:name": "Kelly Marino",
+            "my:name": "Kelly Mariño",
             "my:mbox": "thisisnotmyemail@example.org",
             "my:studyProgram": "Microcredential student",
             "my:studyLocation": {"@id": "https://www.ugent.be/"},
