@@ -1,7 +1,9 @@
 # https://kellymarino.github.io/knowledge-graphs-2026/data.ttl
 
 ## Response headers (curl -I)
-`HTTP/2 200 
+
+```
+HTTP/2 200 
 server: GitHub.com
 content-type: text/turtle; charset=utf-8
 last-modified: Mon, 02 Mar 2026 21:29:51 GMT
@@ -22,7 +24,8 @@ x-cache-hits: 0
 x-timer: S1772639050.495945,VS0,VE111
 vary: Accept-Encoding
 x-fastly-request-id: c5ddcec13071491a0f7dfb395856468ee9ffb7fd
-content-length: 566`
+content-length: 566
+```
 
 ## Comments on publication features
 
