@@ -18,7 +18,8 @@
                 {"@id": "https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis"},
                 {"@id": "https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna"},
                 {"@id": "https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me"},
-                {"@id": "https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#me"}
+                {"@id": "https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#me"},
+                {"@id": "https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#me"}
             ]
         },
         {
