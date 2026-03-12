@@ -6,9 +6,10 @@ ex:MyName a my:Person ;
     my:mbox "thisisnotmyemail@example.org" ;
     my:studyProgram "Microcredential student" ;
     my:studyLocation <https://www.ugent.be/> ;
+    my:courseParticipant <https://anyplin.github.io/Knowledge-Graphs/data.ttl#KnowledgeGraphs> ;
     my:hasPet ex:Dog ;
     my:speaks "Dutch" ;
-    my:knows <https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis>, <https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna> .
+    my:knows <https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis>, <https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna>, <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>, <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#me> .
 
 ex:Dog a my:Pet ;
     my:breed "Colombian black street dog" ;

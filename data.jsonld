@@ -11,11 +11,14 @@
             "my:mbox": "thisisnotmyemail@example.org",
             "my:studyProgram": "Microcredential student",
             "my:studyLocation": {"@id": "https://www.ugent.be/"},
+            "my:courseParticipant": {"@id": "https://anyplin.github.io/Knowledge-Graphs/data.ttl#KnowledgeGraphs"},
             "my:hasPet": {"@id": "ex:Dog"},
             "my:speaks": "Dutch",
             "my:knows": [
                 {"@id": "https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis"},
-                {"@id": "https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna"}
+                {"@id": "https://anyplin.github.io/Knowledge-Graphs/data.ttl#Anna"},
+                {"@id": "https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me"},
+                {"@id": "https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#me"}
             ]
         },
         {
