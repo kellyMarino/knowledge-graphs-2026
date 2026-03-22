@@ -4,33 +4,42 @@
 @prefix my:   <https://kellymarino.github.io/knowledge-graphs-2026/vocabulary.ttl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-# ---- Classes ----
+# ---- Classes (linked to FOAF where applicable) ----
 my:Person a rdfs:Class ;
     rdfs:label "Person" ;
-    rdfs:comment "A person (e.g. a student or colleague)." .
+    rdfs:comment "A person (e.g. a student or colleague)." ;
+    rdfs:subClassOf foaf:Person .
 
 my:Pet a rdfs:Class ;
     rdfs:label "Pet" ;
     rdfs:comment "An animal kept as a pet (e.g. a dog)." .
+
+my:Photograph a rdfs:Class ;
+    rdfs:label "Photograph" ;
+    rdfs:comment "A photograph or image with metadata (title, photographer, subject, location, etc.)." ;
+    rdfs:subClassOf foaf:Image .
 
 # ---- Properties ----
 my:name a rdf:Property ;
     rdfs:label "name" ;
     rdfs:comment "Full name of the person." ;
     rdfs:domain my:Person ;
-    rdfs:range rdfs:Literal .
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf foaf:name .
 
 my:mbox a rdf:Property ;
     rdfs:label "email" ;
     rdfs:comment "Email address (mailbox)." ;
     rdfs:domain my:Person ;
-    rdfs:range rdfs:Literal .
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf foaf:mbox .
 
 my:knows a rdf:Property ;
     rdfs:label "knows" ;
     rdfs:comment "A person known by this person (e.g. friend or colleague)." ;
     rdfs:domain my:Person ;
     rdfs:range my:Person ;
+    rdfs:subPropertyOf foaf:knows ;
     owl:equivalentProperty foaf:knows .
 
 my:studyProgram a rdf:Property ;
@@ -67,10 +76,49 @@ my:depiction a rdf:Property ;
     rdfs:label "depiction" ;
     rdfs:comment "An image or picture of the resource." ;
     rdfs:domain my:Pet ;
-    rdfs:range rdfs:Resource .
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf foaf:depiction .
 
 my:breed a rdf:Property ;
     rdfs:label "breed" ;
     rdfs:comment "The breed of the pet (e.g. species or breed name)." ;
     rdfs:domain my:Pet ;
     rdfs:range rdfs:Literal .
+
+my:photoTitle a rdf:Property ;
+    rdfs:label "photo title" ;
+    rdfs:comment "Title of the photograph." ;
+    rdfs:domain my:Photograph ;
+    rdfs:range rdfs:Literal .
+
+my:photographer a rdf:Property ;
+    rdfs:label "photographer" ;
+    rdfs:comment "The person or entity who took the photograph." ;
+    rdfs:domain my:Photograph ;
+    rdfs:range rdfs:Resource .
+
+my:depicts a rdf:Property ;
+    rdfs:label "depicts" ;
+    rdfs:comment "The subject of the photograph (e.g. person, pet, or place)." ;
+    rdfs:domain my:Photograph ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf foaf:depicts .
+
+my:takenAt a rdf:Property ;
+    rdfs:label "taken at" ;
+    rdfs:comment "The location where the photograph was taken (as URI)." ;
+    rdfs:domain my:Photograph ;
+    rdfs:range rdfs:Resource .
+
+my:photoDescription a rdf:Property ;
+    rdfs:label "photo description" ;
+    rdfs:comment "A textual description of the photograph." ;
+    rdfs:domain my:Photograph ;
+    rdfs:range rdfs:Literal .
+
+my:imageURL a rdf:Property ;
+    rdfs:label "image URL" ;
+    rdfs:comment "URL of the image file." ;
+    rdfs:domain my:Photograph ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf foaf:img .

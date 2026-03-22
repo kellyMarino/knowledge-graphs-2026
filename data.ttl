@@ -15,3 +15,47 @@ ex:Dog a my:Pet ;
     my:breed "Colombian black street dog" ;
     my:depiction <https://kellymarino.github.io/knowledge-graphs-2026/images/mybeautifuldog.jpeg> .
 
+ex:PhotoOfMe a my:Photograph ;
+    my:photoTitle "Kelly at the library" ;
+    my:photographer <https://jellenelis.github.io/knowledge-graphs/data.ttl#JelleNelis> ;
+    my:depicts ex:MyName ;
+    my:takenAt <https://www.ugent.be/> ;
+    my:photoDescription "Kelly studying at the university library during exam period." ;
+    my:imageURL <https://kellymarino.github.io/knowledge-graphs-2026/images/photo-of-me.jpg> .
+
+ex:PhotoOfDog a my:Photograph ;
+    my:photoTitle "My dog in the park" ;
+    my:photographer ex:MyName ;
+    my:depicts ex:Dog ;
+    my:takenAt <https://www.openstreetmap.org/relation/2802712> ;
+    my:photoDescription "My Colombian black street dog in a terrace on a sunny day." ;
+    my:imageURL <https://kellymarino.github.io/knowledge-graphs-2026/images/mybeautifuldog.jpeg> .
+
+ex:PhotoCattleyaViolacea a my:Photograph ;
+    my:photoTitle "Cattleya violacea" ;
+    my:photographer <https://commons.wikimedia.org/wiki/User:Hellen_Perrone> ;
+    my:depicts <https://www.wikidata.org/wiki/Q1600763> ;
+    my:photoDescription "Cattleya violacea - Hellen Perrone - Own work" ;
+    my:imageURL <https://en.wikipedia.org/wiki/Cattleya_violacea#/media/File:Cattleya_violacea_3.jpg> .
+
+ex:PhotoPoppiesLakeGeneva a my:Photograph ;
+    my:photoTitle "Poppies on Lake Geneva, Montreux" ;
+    my:photographer <https://commons.wikimedia.org/wiki/User:Eric_Hill> ;
+    my:depicts <https://www.wikidata.org/wiki/Q159786> ;
+    my:takenAt <https://www.wikidata.org/wiki/Q711> ;
+    my:photoDescription "Poppies on Lake Geneva, Montreux - Eric Hill from Boston, MA, USA" ;
+    my:imageURL <https://en.wikipedia.org/wiki/Poppy#/media/File:Poppies_in_the_Sunset_on_Lake_Geneva.jpg> .
+
+ex:PhotoAcanthusSpinosus a my:Photograph ;
+    my:photoTitle "Acanthus spinosus" ;
+    my:photographer <https://commons.wikimedia.org/wiki/User:Magnus_Manske> ;
+    my:depicts <https://www.wikidata.org/wiki/Q4672078> ;
+    my:photoDescription "Acanthus spinosus - Magnus Manske - Own work" ;
+    my:imageURL <https://en.wikipedia.org/wiki/Acanthus_spinosus#/media/File:P1000255_Acanthus_spinosus_(Spiny_bear's_breeches)_(Acanthaceae)_Plant.JPG> .
+
+ex:PhotoDahliaHybrida a my:Photograph ;
+    my:photoTitle "Dahlia x hybrida" ;
+    my:photographer <https://commons.wikimedia.org/wiki/User:Muhammad_Mahdi_Karim> ;
+    my:depicts <https://www.wikidata.org/wiki/Q161261> ;
+    my:photoDescription "Dahlia x hybrida - Muhammad Mahdi Karim - Own work" ;
+    my:imageURL <https://en.wikipedia.org/wiki/File:Dahlia_x_hybrida.jpg#/media/File:Dahlia_x_hybrida.jpg> .
