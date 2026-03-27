@@ -21,7 +21,7 @@ ex:PhotoOfMe a my:Photograph ;
     my:depicts ex:MyName ;
     my:takenAt <https://www.ugent.be/> ;
     my:photoDescription "Kelly studying at the university library during exam period." ;
-    my:imageURL <https://kellymarino.github.io/knowledge-graphs-2026/images/photo-of-me.jpg> .
+    my:imageURL <https://www.ppic.org/wp-content/uploads/2023/05/female-student-studying-in-library.jpg> .
 
 ex:PhotoOfDog a my:Photograph ;
     my:photoTitle "My dog in the park" ;
